@@ -1,0 +1,9 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+*.pyc
+__pycache__
+.DS_Store
+.DS_Store?
+*.o
+build
+.ipynb_*
+*.pkl
