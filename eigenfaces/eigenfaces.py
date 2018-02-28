@@ -28,7 +28,7 @@ def calc( faces, k=4 ):
 
     w, v = np.linalg.eig( covmat )
 
-    assert np.max( np.imag(w) ) < 1e-10, "Eigenvalues are not real"
+    assert np.max( np.abs( np.imag(w) ) ) < 1e-10, "Eigenvalues are not real"
 
     w = np.real(w)
     v = np.real(v)
